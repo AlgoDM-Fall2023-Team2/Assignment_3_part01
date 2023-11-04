@@ -30,9 +30,9 @@ st.write('Upload an image to perform a visual search.')
 
 image = st.file_uploader("Upload Image", type = ['jpg'])
 n = st.number_input('Choose the number of similar images to be displayed',min_value=1,max_value=10,value=3)
-button_clicked = st.button('Predict', key=1002)
+button_clicked = st.button('Submit', key=1002)
    
-if button_clicked and image is not None:
+if button_clicked and image is not None and n is not None:
 
     st.header("The Image you uploaded")
 
